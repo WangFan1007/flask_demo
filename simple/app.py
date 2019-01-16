@@ -3,6 +3,8 @@ from flask import Flask,render_template,request,redirect,session
 app = Flask(__name__)
 app.secret_key = "funny"
 
+# app.config.from_object()
+
 @app.route('/login',methods=['get','post'])
 def login():
     # return "Login"
